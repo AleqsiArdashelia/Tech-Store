@@ -1,18 +1,68 @@
+* {
+    transition: 1s ease;
+}
+body {
+    background-color: rgb(240, 241, 243);
+}
+.blurtext {
+    background-color: rgba(255, 255, 255, 0.329);
+    backdrop-filter: blur(2px);
+    height: auto;
+    padding: 1rem 3rem;
+    border-radius: 30px;
+    margin-right: 2rem;
+}
+#bgimg {
+    background-image: url("img/pexels-photo-331684.jpeg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-top: 48px;
+  }
+
 .card{
     width: 20rem;
 }
 #products > div{
     margin: 0 0.75rem  ;
     margin-top: 0.7rem;
-    background-color: #f1f1f1;
-
 }
-#products > div > img{
-    border-radius: 10px;
+#products > div > a > img{
+    border-radius: 15px;
     height: 200px;
 }
+#products > div > a > img{
+    filter: blur(0.8px);
+}
+#products > div > a > img:hover {
+    filter: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    
+}
 
+a:hover {
+    color: inherit;
+}
 
+.card {
+    background-color:rgba(255, 255, 255, 0.329);
+    backdrop-filter: blur(20px);
+    border-radius: 15px; 
+}
+#carouselExampleIndicators > * {
+    height: 70vh !important;
+}
+#carouselExampleIndicators {
+    height: 70vh !important;
+    padding: 0rem 3rem;
+}
+#carouselExampleIndicators > div > div > img {
+    width: 70% !important;
+    object-fit: contain !important;
+} 
 @media screen and (max-width: 1200px) {
 
 
