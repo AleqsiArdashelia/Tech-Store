@@ -32,7 +32,7 @@ body {
     height: 200px;
 }
 #products > div > a > img{
-    filter: blur(0.8px);
+    filter: blur(0.7px);
 }
 #products > div > a > img:hover {
     filter: none;
