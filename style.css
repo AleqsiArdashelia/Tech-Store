@@ -25,20 +25,23 @@ body {
 .card{
     width: 20rem;
 }
+.card:hover {
+    transform: scale(1.2);
+}
 
 #products > div{
-    margin: 0 0.75rem  ;
+    margin: 0 2rem  ;
     margin-top: 0.7rem;
+    margin-bottom: 2.5rem;
 }
 
 #products > div > a > img{
     border-radius: 15px;
-    height: 200px;
+    height: 250px;
+    filter: blur(0.7px);
+    margin: auto;
 }
 
-#products > div > a > img{
-    filter: blur(0.7px);
-}
 
 #products > div > a > img:hover {
     filter: none;
@@ -60,20 +63,12 @@ a:hover {
     backdrop-filter: blur(20px);
     border-radius: 15px; 
 }
-
-#carouselExampleIndicators > * {
-    height: 70vh !important;
+.carrev {
+    margin: 1rem 5rem;
 }
-
-#carouselExampleIndicators {
-    height: 70vh !important;
-    padding: 0rem 3rem;
+.carousel-item {
+    margin: 5rem 1rem;
 }
-
-#carouselExampleIndicators > div > div > img {
-    width: 70% !important;
-    object-fit: contain !important;
-} 
 
 @media screen and (max-width: 1200px) {
 
