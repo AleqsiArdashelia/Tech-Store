@@ -63,11 +63,22 @@ a:hover {
     backdrop-filter: blur(20px);
     border-radius: 15px; 
 }
+
+#carouselExampleIndicators {
+    size: auto;
+}
+
+.carrevh {
+    margin-left: 5rem;
+}
+
 .carrev {
     margin: 1rem 5rem;
 }
+
 .carousel-item {
     margin: 5rem 1rem;
+    padding: 1.5rem;
 }
 
 @media screen and (max-width: 1200px) {
