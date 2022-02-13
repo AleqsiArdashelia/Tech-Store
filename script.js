@@ -1,29 +1,8 @@
-$(document).ready(function(){ 
+var slider = document.getElementById("myRange");
+var output = document.getElementById("demo");
+output.innerHTML = slider.value; // Display the default slider value
 
-    $('.carousel1').owlCarousel({
-        loop:true,
-        margin:0,
-        autoplay: true,
-        // nav:true,
-        // navText: [
-        //     '<i class="fas fa-arrow-left"></i>',
-        //     '<i class="fas fa-arrow-right"></i>'
-        // ],
-        stagePadding: 0,
-        dots: false,
-        smartSpeed:2500,
-        autoplayHoverPause:true,
-        responsive:{
-            0:{
-                items:1,
-            },
-            600:{
-                items:1,
-            },
-            1000:{
-                items:2,
-            }
-        }
-    });
-
-});
+// Update the current slider value (each time you drag the slider handle)
+slider.oninput = function() {
+  output.innerHTML = this.value;
+}

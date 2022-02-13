@@ -51,9 +51,41 @@
         </div>
       </nav>
 <!-- navbar end -->
-<!-- showcase start -->
+<!-- categories start -->
 <section class="bg-ligh text-dark p-5 text-center">
-    <div class="container">
+    <div class="row justify-content-around blurtext">
+        <div class="col-2 me-5">
+            <h5 class="text-info">Categories</h5>
+            <ul class="nav flex-column ">
+                <li class="nav-item mb2"><a href="" class="nav-link p-0 text-dark"> Keyboards </a></li>
+                <li class="nav-item mb2"><a href="" class="nav-link p-0 text-dark"> Mouses </a></li>
+                <li class="nav-item mb2"><a href="" class="nav-link p-0 text-dark"> Audio Equipment </a></li>
+                <li class="nav-item mb2"><a href="" class="nav-link p-0 text-dark"> Mousepads </a></li>
+                <li class="nav-item mb2"><a href="" class="nav-link p-0 text-dark"> Virtual Reality </a></li>
+                <li class="nav-item mb2"><a href="" class="nav-link p-0 text-dark"> Controllers </a></li>
+                <li class="nav-item mb2"><a href="" class="nav-link p-0 text-dark"> Camera Eqiupment </a></li>
+            </ul>
+        </div>
+        <div class="col-2 me-5">
+            <h5 class="text-info">Manufacturer</h5>
+            <ul class="nav flex-column ">
+                <li class="nav-item mb2"><a href="" class="nav-link p-0 text-dark"> Razer </a></li>    
+                <li class="nav-item mb2"><a href="" class="nav-link p-0 text-dark"> Canon </a></li>
+                <li class="nav-item mb2"><a href="" class="nav-link p-0 text-dark"> Steelseries </a></li>
+                <li class="nav-item mb2"><a href="" class="nav-link p-0 text-dark"> Logitech </a></li>
+                <li class="nav-item mb2"><a href="" class="nav-link p-0 text-dark"> Corsair </a></li>
+                <li class="nav-item mb2"><a href="" class="nav-link p-0 text-dark"> Oculus </a></li>
+                <li class="nav-item mb2"><a href="" class="nav-link p-0 text-dark"> Microsoft </a></li>
+                <li class="nav-item mb2"><a href="" class="nav-link p-0 text-dark"> Sennheiser </a></li>
+                <li class="nav-item mb2"><a href="" class="nav-link p-0 text-dark"> EPOS </a></li>
+            </ul>
+        </div>
+        <div class="slidecontainer">
+            <label for="myRange">Maximum Price</label>
+            <input id="myRange" type="range" min="1" max="500" value="500" class="slider">
+        </div>
+    </div>
+    <!-- <div class="container">
         <div class="d-sm-flex blurtext">
             <div>
                 <h1>
@@ -71,9 +103,9 @@
             </div>
             <img class="img-fluid shadow-lg mb-5 bg-body main-img" src="img/pexels-ovan-62689.jpg" alt="" width="50%" style="border-radius: 30px; backdrop-filter: blur(10px);" >
         </div>
-    </div>
+    </div> -->
 </section>
-<!-- showcase end -->
+<!-- categories end -->
 <!-- products start -->
 <div class="d-flex col-3 text-dark text-center row m-auto w-100 justify-content-center" id="products">
     <div class="card">
@@ -81,7 +113,9 @@
         <div class="card-body">
             <h5 class="card-title">Canon EOS Rebel T7 DSLR Camera with 18-55mm Lens</h5>
             <p class="card-text">Built-in Wi-Fi | 24.1 MP CMOS Sensor | DIGIC 4+ Image Processor and Full HD Videos</p>
+            <p class="card-price">$439.00</p>
             <a href="" class="btn btn-primary">More Info</a>
+            <a href="" class="btn btn-success">Add To Cart</a>
         </div>
         </a>
     </div>
@@ -90,7 +124,9 @@
         <div class="card-body">
             <h5 class="card-title">SteelSeries Apex Pro Mechanical Gaming Keyboard</h5>
             <p class="card-text">Adjustable Actuation Switches | World's Fastest Mechanical Keyboard | OLED Smart Display | RGB Backlit</p>
+            <p class="card-price">$119.99</p>
             <a href="" class="btn btn-primary">More Info</a>
+            <a href="" class="btn btn-success">Add To Cart</a>
         </div>
         </a>
     </div>
@@ -98,8 +134,10 @@
         <a href="#"><img src="img/mouse.jpg" alt="" class="card-img-top mt-3 img-fluid">
         <div class="card-body">
             <h5 class="card-title">Logitech G502 HERO High Performance Wired Gaming Mouse</h5>
-            <p class="card-text">HERO 25K Sensor | 25,600 DPI | RGB | Adjustable Weights | 11 Programmable Buttons</p>
+            <p class="card-text">HERO 25K Sensor | 25,600 DPI | RGB | Adjustable Weights</p>
+            <p class="card-price">$80.99</p>
             <a href="" class="btn btn-primary">More Info</a>
+            <a href="" class="btn btn-success">Add To Cart</a>
         </div>
         </a>
     </div>
@@ -108,7 +146,9 @@
         <div class="card-body">
             <h5 class="card-title">Corsair HS60 PRO</h5>
             <p class="card-text">7.1 Virtual Surround Sound Gaming Headset with USB DAC</p>
+            <p class="card-price">$76.98</p>
             <a href="" class="btn btn-primary">More Info</a>
+            <a href="" class="btn btn-success">Add To Cart</a>
         </div>
         </a>
     </div>
@@ -117,7 +157,9 @@
         <div class="card-body">
             <h5 class="card-title">Razer Goliathus Extended Chroma Gaming Mousepad</h5>
             <p class="card-text">Customizable Chroma RGB Lighting | Soft, Cloth Material | Non-Slip Rubber Base | Classic Black</p>
+            <p class="card-price">$24.99</p>
             <a href="" class="btn btn-primary">More Info</a>
+            <a href="" class="btn btn-success">Add To Cart</a>
         </div>
         </a>
     </div>
@@ -126,7 +168,9 @@
         <div class="card-body">
             <h5 class="card-title">EPOS | Sennheiser GSX 1000</h5>
             <p class="card-text">Gaming Audio Amplifier / External Sound Card | with 7.1 Surround Sound</p>
+            <p class="card-price">$84.99</p>
             <a href="" class="btn btn-primary">More Info</a>
+            <a href="" class="btn btn-success">Add To Cart</a>
         </div>
         </a>
     </div>
@@ -134,8 +178,10 @@
         <a href="#"><img src="img/VR.jpg" alt="" class="card-img-top mt-3 img-fluid">
         <div class="card-body">
             <h5 class="card-title">Oculus Quest 2</h5>
-            <p class="card-text">Advanced All-In-One Virtual Reality Headset | 128 GB | Next-level Hardware | All-In-One Gaming | Immersive Entertainment</p>
+            <p class="card-text">Advanced All-In-One Virtual Reality Headset | 128 GB | Next-level Hardware | All-In-One Gaming</p>
+            <p class="card-price">$397.99</p>
             <a href="" class="btn btn-primary">More Info</a>
+            <a href="" class="btn btn-success">Add To Cart</a>
         </div>
         </a>
     </div>
@@ -143,8 +189,10 @@
        <a href="#"><img src="img/controller.jpg" alt="" class="card-img-top mt-3 img-fluid">
         <div class="card-body">
             <h5 class="card-title">Microsoft Xbox Wireless Controller + Wireless Adapter for Windows 10</h5>
-            <p class="card-text">Carbon Black | battery usage up to 40 hours | 3.5mm audio headset jack | Connect using the USB-C port for direct plug and play to console or PC</p>
+            <p class="card-text">Carbon Black | battery usage up to 40 hours | 3.5mm audio headset jack | Connect using the USB-C port for direct plug and play</p>
+            <p class="card-price">$59.99</p>
             <a href="" class="btn btn-primary">More Info</a>
+            <a href="" class="btn btn-success">Add To Cart</a>
         </div>
         </a>
     </div>
@@ -248,5 +296,6 @@ src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" 
 <script 
 src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
 </script>
+<script src="script.js"></script>
 </body>
 </html>
