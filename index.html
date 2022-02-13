@@ -6,14 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <title>tech Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <title>Tech Store</title>
 </head>
 <body>
     <div id="bgimg">
     </nav>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"><h1 class="text-info">Tech Store</h1></a>
+          <a class="navbar-brand" href="#"><h2 class="text-info mb-0">Tech <span class="text-light">Store</span></h2></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -41,6 +43,9 @@
                 <li class="nav-item">
                     <a class="nav-link text-info" href="#">Sign Up</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link text-info" href="#"> <i class="bi bi-cart"></i> </a>
+                </li>
               </ul>
               <form class="d-flex">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -52,9 +57,9 @@
       </nav>
 <!-- navbar end -->
 <!-- categories start -->
-<section class="bg-ligh text-dark p-5 text-start">
-    <div class="row justify-content-around blurtext">
-        <div class="col-2 me-5">
+<section class="d-flex justify-content-center bg-ligh text-dark p-5 text-start w-100">
+    <div class="row justify-content-around blurtext w-50">
+        <div class="col-1">
             <h5 class="text-info">Categories</h5>
             <ul class="nav flex-column ">
                 <li class="nav-item mb2"><a href="" class="nav-link p-0 text-dark"> Keyboards </a></li>
@@ -66,7 +71,7 @@
                 <li class="nav-item mb2"><a href="" class="nav-link p-0 text-dark"> Camera Eqiupment </a></li>
             </ul>
         </div>
-        <div class="col-2 me-5">
+        <div class="col-1">
             <h5 class="text-info">Manufacturer</h5>
             <ul class="nav flex-column ">
                 <li class="nav-item mb2"><a href="" class="nav-link p-0 text-dark"> Razer </a></li>    
@@ -81,25 +86,6 @@
             </ul>
         </div>
     </div>
-    <!-- <div class="container">
-        <div class="d-sm-flex blurtext">
-            <div>
-                <h1>
-                    Lorem ipsum   
-                    <span
-                    class="text-info"
-                    >
-                    dolor sit
-                    </span>
-                    amet
-                    <p class="lead my-4 " ><strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus quam id leo in vitae. Arcu dictum varius duis at consectetur lorem donec massa sapien. A scelerisque purus semper eget duis. Aliquam purus sit amet luctus venenatis. Cras ornare arcu dui vivamus arcu felis bibendum. Condimentum mattis pellentesque id nibh tortor id. Placerat vestibulum lectus mauris ultrices eros in. Quis auctor elit sed vulputate mi sit amet mauris. Proin libero nunc consequat interdum varius sit amet mattis. Sem et tortor consequat id porta. Convallis aenean et tortor at risus viverra adipiscing at in.
-                    </strong></p>
-                </h1>
-               
-            </div>
-            <img class="img-fluid shadow-lg mb-5 bg-body main-img" src="img/pexels-ovan-62689.jpg" alt="" width="50%" style="border-radius: 30px; backdrop-filter: blur(10px);" >
-        </div>
-    </div> -->
 </section>
 <!-- categories end -->
 <!-- products start -->
@@ -193,86 +179,109 @@
         </a>
     </div>
 </div>
-</div>
 <!-- products end -->
+<!-- pagination start -->
+<nav aria-label="Page navigation">
+    <ul class="pagination justify-content-center">
+      <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+      <li class="page-item active"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item"><a class="page-link" href="#">Next</a></li>
+    </ul>
+</nav>
+<!-- pagination end -->
 <div class="divider"></div>
-<!-- review start -->
-<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img class="d-block w-100" src="img/opal.jpg" alt="First slide">
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="img/Symfonisk.jpg" alt="Second slide">
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="img/audiophile.jpg" alt="Third slide">
-      </div>
+</div>
+
+<!-- carousel start -->
+
+<div class="owl-carousel owl-theme">
+    <div class="item">
+        <div class="position-relative">
+                <img src="img/opal.jpg" alt="">
+            <div>
+                <h1 class="text-info">Title</h1>
+                <p class="text-white"><strong>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, beatae.</strong></p>
+            </div>
+        </div>
     </div>
-    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-<!-- review end -->
+    <div class="item">
+        <div class="position-relative">
+            <img src="img/Symfonisk.jpg" alt="">
+            <div>
+                <h1 class="text-info">Title</h1>
+                <p class="text-white"><strong>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, beatae.</strong></p>
+            </div>
+        </div>       
+    </div>
+    <div class="item">
+        <div class="position-relative">
+            <img src="img/audiophile.jpg" alt="">
+            <div>
+                <h1 class="text-info">Title</h1>
+                <p class="text-white"><strong>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, beatae.</strong></p>
+            </div>
+        </div>
+        
+        
+    </div>
+</div>
+
+<!-- carousel end -->
 <div class="divider"></div>
 <!-- footer start -->
-<footer class="py-5 bg-dark">
-    <div class="row">
-        <div class="col-2 ms-5">
-            <h5 class="text-info">About us</h5>
-            <ul class="nav flex-column">
-                <li class="nav-item mb2"><a href="#" class="nav-link p-0 text-muted"> Who we are </a></li>
-                <li class="nav-item mb2"><a href="#" class="nav-link p-0 text-muted"> Contact Us </a></li>
-                <li class="nav-item mb2"><a href="#" class="nav-link p-0 text-muted"> Our Sites </a></li>
-                <li class="nav-item mb2"><a href="#" class="nav-link p-0 text-muted"> In The News </a></li>
-                <li class="nav-item mb2"><a href="#" class="nav-link p-0 text-muted"> Team </a></li>
-                <li class="nav-item mb2"><a href="#" class="nav-link p-0 text-muted"> Careers </a></li>
-            </ul>
-        </div>
-        <div class="col-2">
-            <h5 class="text-info">Customer Service</h5>
-            <ul class="nav flex-column">
-                <li class="nav-item mb2"><a href="#" class="nav-link p-0 text-muted"> FAQ </a></li>
-                <li class="nav-item mb2"><a href="#" class="nav-link p-0 text-muted"> Shipping </a></li>
-                <li class="nav-item mb2"><a href="#" class="nav-link p-0 text-muted"> Cancellation </a></li>
-                <li class="nav-item mb2"><a href="#" class="nav-link p-0 text-muted"> Returns </a></li>
-                <li class="nav-item mb2"><a href="#" class="nav-link p-0 text-muted"> Bulk Orders </a></li>
-                <li class="nav-item mb2"><a href="#" class="nav-link p-0 text-muted"> Buying Guides </a></li>
-            </ul>
-        </div>
-        <div class="col-2">
-            <h5 class="text-info">Your Account</h5>
-            <ul class="nav flex-column">
-                <li class="nav-item mb2"><a href="#" class="nav-link p-0 text-muted"> Your Account </a></li>
-                <li class="nav-item mb2"><a href="#" class="nav-link p-0 text-muted"> Personal Information </a></li>
-                <li class="nav-item mb2"><a href="#" class="nav-link p-0 text-muted"> Addresses </a></li>
-                <li class="nav-item mb2"><a href="#" class="nav-link p-0 text-muted"> Discount </a></li>
-                <li class="nav-item mb2"><a href="#" class="nav-link p-0 text-muted"> Track your order </a></li>
-            </ul>   
-        </div>
-        <div class="col-4 offset-1">
-            <form>
-                <h5 class="text-info">Subscribe to our newsletter</h5>
-                <p class="text-muted">Monthly digest of whats new and exciting from us.</p>
-                <div class="d-flex w-100 gap-2">
-                    <label for="newsletter1" class="visually-hidden">Email Address</label>
-                    <input id="newsletter1" type="text" class="form-control" placeholder="Email Address">
-                    <button class="btn btn-primary" type="button">Subscribe</button>
-                </div>
-            </form>
-        </div>
+<footer class="bg-dark">
+    <div>
+      <h5 class="text-info">About Us</h5>
+      <ul>
+        <li><a href="">Who we are</a></li>
+        <li><a href="">Contact Us</a></li>
+        <li><a href="">Our Sites</a></li>
+        <li><a href="">In The News</a></li>
+        <li><a href="">Team</a></li>
+        <li><a href="">Careers</a></li>
+      </ul>
     </div>
-</footer>
+    <div>
+      <h5 class="text-info">Customer Service</h5>
+      <ul>
+        <li><a href="">FAQ</a></li>
+        <li><a href="">Shipping</a></li>
+        <li><a href="">Cancellation</a></li>
+        <li><a href="">Returns</a></li>
+        <li><a href="">Bulk Orders</a></li>
+        <li><a href="">Buying Guides</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5 class="text-info">Your Account</h5>
+      <ul>
+        <li><a href="">Personal Information</a></li>
+        <li><a href="">Addresses</a></li>
+        <li><a href="">Discount</a></li>
+        <li><a href="">Track Your Order</a></li>
+      </ul>
+    </div>
+    <div>
+      <form>
+        <h5 class="text-info">Subscribe to our newsletter</h5>
+        <p class="text-muted">Monthly digest of whats new and exciting from us.</p>
+        <div class="d-flex w-100 gap-2">
+            <label for="newsletter1" class="visually-hidden">Email Address</label>
+            <input id="newsletter1" type="text" class="form-control" placeholder="Email Address">
+            <button class="btn btn-primary" type="button">Subscribe</button>
+        </div>
+      </form>
+    </div>
+  </footer>
   
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="script.js"></script>
+
 </body>
 </html>
